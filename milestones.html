@@ -31,45 +31,62 @@
 
   <section class="section">
     <div style="max-width: 700px; margin: 0 auto;">
-      <div style="display: flex; gap: 10px; margin-bottom: 40px; flex-wrap: wrap; justify-content: center;">
-        <button onclick="filterMilestones('all')" style="padding: 9px 22px; border-radius: 10px; border: none; background: var(--accent-rose); color: #fff; cursor: pointer; font-family: 'Inter'; font-size: 0.82rem; font-weight: 600;">All</button>
-        <button onclick="filterMilestones('completed')" style="padding: 9px 22px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.08); background: var(--bg-card); color: var(--text-dark); cursor: pointer; font-family: 'Inter'; font-size: 0.82rem; font-weight: 600;">Completed</button>
-        <button onclick="filterMilestones('upcoming')" style="padding: 9px 22px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.08); background: var(--bg-card); color: var(--text-dark); cursor: pointer; font-family: 'Inter'; font-size: 0.82rem; font-weight: 600;">Upcoming</button>
+      <!-- Drop-down menu for filtering -->
+      <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 40px; justify-content: center;">
+        <label for="milestoneFilter" style="font-weight: 600; font-size: 0.9rem; color: var(--text-dark);">Filter by status:</label>
+        <select id="milestoneFilter" onchange="filterMilestones(this.value)" style="padding: 10px 20px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.1); background: var(--bg-card); color: var(--text-dark); font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 500; cursor: pointer; outline: none; box-shadow: var(--shadow-sm); appearance: auto;">
+          <option value="all">All Milestones</option>
+          <option value="completed">Completed</option>
+          <option value="upcoming">Upcoming</option>
+        </select>
       </div>
       <div class="timeline">
         <div class="timeline-item completed" data-status="completed">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <h3>Project Proposal</h3>
-            <p>The initial project proposal defines the research background, problem, objectives, methodology, system requirements, and expected outcomes.</p>
+            <p>Initial concept presentation and project charter submission.</p>
+            <span class="timeline-marks">Marks Allocated: 12%</span>
           </div>
         </div>
         <div class="timeline-item completed" data-status="completed">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <h3>Progress Presentation 1</h3>
-            <p>This milestone focuses on early implementation, literature review completion, system design, and initial module development.</p>
+            <p>First technical milestone evaluating 50% functional completion.</p>
+            <span class="timeline-marks">Marks Allocated: 15%</span>
           </div>
         </div>
         <div class="timeline-item completed" data-status="completed">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <h3>Progress Presentation 2</h3>
-            <p>This stage presents improved system functionality, AI model progress, UI development, testing results, and module integration.</p>
+            <p>Refinement phase assessing 90% system integration.</p>
+            <span class="timeline-marks">Marks Allocated: 18%</span>
+          </div>
+        </div>
+        <div class="timeline-item" data-status="upcoming">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3>Demonstration</h3>
+            <p>Final system walkthrough and poster presentation.</p>
+            <span class="timeline-marks">Marks Allocated: 10%</span>
           </div>
         </div>
         <div class="timeline-item" data-status="upcoming">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <h3>Final Assessment</h3>
-            <p>The final assessment includes the completed system, final report, testing, evaluation, documentation, and demonstration.</p>
+            <p>Full dissertation submission and final defense.</p>
+            <span class="timeline-marks">Marks Allocated: 10%</span>
           </div>
         </div>
         <div class="timeline-item" data-status="upcoming">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
-            <h3>Viva</h3>
-            <p>The viva evaluates the project knowledge, technical implementation, research contribution, and individual component understanding.</p>
+            <h3>Viva & Video</h3>
+            <p>Final viva, commercialization video, and user testing results.</p>
+            <span class="timeline-marks">Marks Allocated: 10%</span>
           </div>
         </div>
       </div>
