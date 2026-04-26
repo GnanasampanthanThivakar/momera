@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milestones | Momera - IVF Prediction</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">MOMERA</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="domain.html">Domain</a></li>
+        <li><a href="milestones.html" class="active">Milestones</a></li>
+        <li><a href="documents.html">Documents</a></li>
+        <li><a href="presentations.html">Presentations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero-small">
+    <span class="hero-badge">🏆 Project Timeline</span>
+    <h1>Project <span class="highlight">Milestones</span></h1>
+    <p>Chronological overview of all key assessments and evaluation milestones.</p>
+  </section>
+
+  <section class="section">
+    <div style="max-width: 700px; margin: 0 auto;">
+      <div style="display: flex; gap: 10px; margin-bottom: 40px; flex-wrap: wrap; justify-content: center;">
+        <button onclick="filterMilestones('all')" style="padding: 9px 22px; border-radius: 10px; border: none; background: var(--accent-rose); color: #fff; cursor: pointer; font-family: 'Inter'; font-size: 0.82rem; font-weight: 600;">All</button>
+        <button onclick="filterMilestones('completed')" style="padding: 9px 22px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.08); background: var(--bg-card); color: var(--text-dark); cursor: pointer; font-family: 'Inter'; font-size: 0.82rem; font-weight: 600;">Completed</button>
+        <button onclick="filterMilestones('upcoming')" style="padding: 9px 22px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.08); background: var(--bg-card); color: var(--text-dark); cursor: pointer; font-family: 'Inter'; font-size: 0.82rem; font-weight: 600;">Upcoming</button>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item completed" data-status="completed">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3>Project Proposal</h3>
+            <p>The initial project proposal defines the research background, problem, objectives, methodology, system requirements, and expected outcomes.</p>
+          </div>
+        </div>
+        <div class="timeline-item completed" data-status="completed">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3>Progress Presentation 1</h3>
+            <p>This milestone focuses on early implementation, literature review completion, system design, and initial module development.</p>
+          </div>
+        </div>
+        <div class="timeline-item completed" data-status="completed">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3>Progress Presentation 2</h3>
+            <p>This stage presents improved system functionality, AI model progress, UI development, testing results, and module integration.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-status="upcoming">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3>Final Assessment</h3>
+            <p>The final assessment includes the completed system, final report, testing, evaluation, documentation, and demonstration.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-status="upcoming">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3>Viva</h3>
+            <p>The viva evaluates the project knowledge, technical implementation, research contribution, and individual component understanding.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer"><p>&copy; 2026 Momera Research Project — SLIIT</p></footer>
+  <script>
+    function filterMilestones(s) { document.querySelectorAll('.timeline-item').forEach(i => { i.style.display = s === 'all' || i.dataset.status === s ? 'block' : 'none'; }); }
+  </script>
+</body>
+</html>

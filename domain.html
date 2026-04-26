@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domain | Momera - IVF Prediction</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">MOMERA</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="domain.html" class="active">Domain</a></li>
+        <li><a href="milestones.html">Milestones</a></li>
+        <li><a href="documents.html">Documents</a></li>
+        <li><a href="presentations.html">Presentations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero-small">
+    <span class="hero-badge">📖 Research Domain</span>
+    <h1>Understanding the <span class="highlight">Problem Space</span></h1>
+    <p>Literature survey, research gaps, objectives, methodology, and technologies powering the Momera CDSS.</p>
+  </section>
+
+  <section class="section">
+    <!-- Image banner -->
+    <div style="margin-bottom: 50px; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.12);">
+      <img src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=1200&q=80" alt="Medical Laboratory" style="width: 100%; height: 300px; object-fit: cover; display: block;">
+    </div>
+
+    <div class="domain-content">
+      <h2>Literature Survey</h2>
+      <p>Recent advancements in healthcare technologies such as Artificial Intelligence (AI), Machine Learning (ML), and Internet of Things (IoT) have significantly improved patient monitoring and decision-making. Wearable devices can continuously track physiological parameters such as heart rate, body temperature, sleep patterns, stress levels, and activity in real-time. These technologies have shown strong potential in enhancing personalized healthcare.</p>
+      <p>In the context of In-Vitro Fertilization (IVF), several studies highlight that treatment success is influenced not only by clinical factors but also by lifestyle, emotional wellbeing, and physiological conditions. AI-based models have been used to predict IVF outcomes, while wearable devices have been applied in general health monitoring. However, most existing systems are limited to either prediction or monitoring and do not provide a comprehensive solution.</p>
+      <p>Additionally, research in psychological health indicates that stress, anxiety, and sleep disturbances can negatively impact IVF outcomes. Similarly, nutrition plays a critical role in hormonal balance, egg quality, and implantation success. Despite these findings, existing IVF-related applications fail to integrate physiological monitoring, emotional support, and personalized nutrition into a single intelligent system.</p>
+
+      <h2>Research Gap</h2>
+      <p>Current IVF support systems and prediction models mainly rely on static clinical parameters such as age, BMI, hormone levels, and previous medical history. These models treat IVF as a fixed process and fail to capture the dynamic physiological changes that occur during treatment.</p>
+      <p>A major limitation is the lack of dynamic biomarkers, particularly E2 Velocity, which measures the rate of change in Estradiol hormone levels during ovarian stimulation. Existing systems focus only on absolute hormone values rather than analyzing how these values change over time, resulting in reduced prediction accuracy and lack of personalization.</p>
+      <p>Furthermore, most existing solutions lack:</p>
+      <ul>
+        <li>Continuous real-time monitoring using wearable devices</li>
+        <li>Integration of physiological, behavioral, and nutritional data</li>
+        <li>AI-driven personalized recommendations</li>
+        <li>Psychological and emotional support systems</li>
+      </ul>
+      <p>There is no unified platform that combines real-time monitoring, dynamic prediction, and personalized care for IVF patients.</p>
+
+      <h2>Research Problem</h2>
+      <p>Despite advancements in IVF treatment, there is a lack of intelligent systems that can provide continuous monitoring, accurate prediction, and personalized support throughout the treatment process.</p>
+      <p>Traditional IVF approaches rely on periodic clinical observations and static data, which may miss critical real-time changes in patient conditions. Additionally, existing wearable devices and fertility applications are not specifically designed to address IVF-specific needs.</p>
+      <p>Therefore, the problem is:</p>
+      <p><strong>How can an AI-powered system be designed to integrate real-time physiological data, dynamic biomarkers such as E2 Velocity, and personalized wellness support to improve IVF treatment outcomes and patient care?</strong></p>
+
+      <h2>Main Objective</h2>
+      <p>To design and develop an intelligent IVF assistant system that enhances fertility prediction, patient monitoring, and personalized care using Artificial Intelligence, Machine Learning, and wearable IoT technologies.</p>
+
+      <h2>Specific Objectives</h2>
+      <ul>
+        <li>To monitor key physiological parameters such as heart rate, HRV, body temperature, SpO2, stress levels, sleep patterns, and activity using wearable devices.</li>
+        <li>To develop AI and Machine Learning models for IVF success prediction using both static and dynamic biomarkers such as E2 Velocity.</li>
+        <li>To provide psychological and behavioral support by analyzing stress, mood, and sleep patterns and offering personalized recommendations.</li>
+        <li>To generate personalized diet plans based on BMI, hormonal data, allergies, and lifestyle factors.</li>
+        <li>To integrate all modules into a unified system that supports both patients and healthcare providers.</li>
+      </ul>
+
+      <h2>Methodology</h2>
+      <p>The proposed system follows a multi-stage approach combining data collection, processing, analysis, and personalized recommendation.</p>
+      <p>Initially, physiological data is collected using wearable devices, including heart rate, temperature, SpO2, stress, and sleep patterns. Additional data such as mood inputs, dietary preferences, and clinical information (e.g., hormone levels, BMI) are also collected.</p>
+      <p>The collected data is transmitted to a cloud-based system where AI and Machine Learning models analyze the data. Dynamic biomarkers such as E2 Velocity are calculated to capture real-time hormonal changes. These models are used to predict IVF success probability and identify critical treatment stages.</p>
+      <p>Based on the analysis, the system generates personalized recommendations, including stress management techniques, diet plans, and lifestyle improvements. The system also provides alerts and feedback to both patients and healthcare providers.</p>
+      <p>Data privacy and security are ensured using advanced techniques such as secure cloud storage and privacy-preserving mechanisms.</p>
+
+      <h2>Technologies Used</h2>
+      <div class="tech-grid">
+        <div class="tech-tag">⚛️ React / Next.js</div>
+        <div class="tech-tag">🎨 Tailwind CSS</div>
+        <div class="tech-tag">🟢 Node.js / Express</div>
+        <div class="tech-tag">🍃 MongoDB</div>
+        <div class="tech-tag">🐍 Python</div>
+        <div class="tech-tag">📊 Scikit-learn</div>
+        <div class="tech-tag">🤖 TensorFlow</div>
+        <div class="tech-tag">⌚ IoT Sensors</div>
+        <div class="tech-tag">☁️ Cloud Integration</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Momera Research Project — Sri Lanka Institute of Information Technology (SLIIT)</p>
+  </footer>
+</body>
+</html>

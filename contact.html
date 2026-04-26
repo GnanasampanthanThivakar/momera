@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Momera - IVF Prediction</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">MOMERA</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="domain.html">Domain</a></li>
+        <li><a href="milestones.html">Milestones</a></li>
+        <li><a href="documents.html">Documents</a></li>
+        <li><a href="presentations.html">Presentations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="hero-small">
+    <span class="hero-badge">📬 Get In Touch</span>
+    <h1>Contact <span class="highlight">Us</span></h1>
+    <p>For more details about the project, research documents, or presentation materials, contact the project team.</p>
+  </section>
+  <section class="section">
+    <div class="contact-wrapper" style="max-width: 900px; margin: 0 auto;">
+      <div class="contact-info-card">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 20px; color: var(--text-dark);">Contact Information</h3>
+        <div class="contact-detail"><div class="contact-detail-icon">📧</div><div><h4>General Email</h4><p>project.momera@gmail.com</p></div></div>
+      </div>
+      <div class="contact-form">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 20px; color: var(--text-dark);">Send a Message</h3>
+        <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" placeholder="Your name"></div>
+        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="your@email.com"></div>
+        <div class="form-group"><label for="message">Message</label><textarea id="message" placeholder="Write your message..."></textarea></div>
+        <button class="btn-submit" onclick="alert('Thank you for your message! We will respond shortly.')">Send Message</button>
+      </div>
+    </div>
+  </section>
+  <footer class="footer"><p>&copy; 2026 Momera Research Project — SLIIT</p></footer>
+</body>
+</html>
